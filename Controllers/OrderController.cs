@@ -4,12 +4,12 @@ namespace TicketsApp.Orderding.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TestController : ControllerBase
+    public class OrderController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetDoubledText(string text)
+        [HttpPost]
+        public IActionResult GetDoubledText(int id)
         {
-            return Ok(text + text);
+            return Ok(id);
         }
     }
 }
